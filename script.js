@@ -47,3 +47,39 @@ function applySiteConfig() {
 }
 
 applySiteConfig();
+
+function wireLightbox() {
+  const box = document.getElementById("lightbox");
+  const img = document.getElementById("lightbox-img");
+  if (!box || !img) return;
+
+  function open(src, alt) {
+    img.src = src;
+    img.alt = alt || "";
+    box.hidden = false;
+    document.body.style.overflow = "hidden";
+  }
+
+  function close() {
+    box.hidden = true;
+    img.removeAttribute("src");
+    document.body.style.overflow = "";
+  }
+
+  document.querySelectorAll(".zoom-btn").forEach((button) => {
+    button.addEventListener("click", () => {
+      const picture = button.closest(".shot")?.querySelector("img");
+      if (picture) open(picture.src, picture.alt);
+    });
+  });
+
+  box.addEventListener("click", (event) => {
+    if (event.target === box || event.target.closest(".lightbox-close")) close();
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && !box.hidden) close();
+  });
+}
+
+wireLightbox();
