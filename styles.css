@@ -716,6 +716,61 @@ section {
   margin-left: 6px;
 }
 
+.price-section {
+  padding: 100px 0;
+}
+
+.price-section .section-head h2 {
+  color: var(--paper);
+}
+
+.price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.price-card {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 24px 22px 26px;
+  background: var(--ink-2);
+}
+
+.price-card.featured {
+  border-color: var(--stamp);
+  box-shadow: 0 16px 40px rgba(184, 67, 43, 0.18);
+}
+
+.price-kind {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  color: var(--stamp);
+  margin-bottom: 14px;
+}
+
+.price-amount {
+  font-family: "Archivo Black", sans-serif;
+  font-size: clamp(26px, 3vw, 32px);
+  line-height: 1;
+  margin-bottom: 14px;
+}
+
+.price-card p {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.price-note {
+  margin-top: 28px;
+  max-width: 560px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
 .footer {
   padding: 110px 0 60px;
   text-align: center;
@@ -892,7 +947,13 @@ section {
 }
 
 @media (max-width: 760px) {
-  .nav {
+  .nav-page {
+    display: none;
+  }
+
+  .nav-page:first-child {
+    display: inline;
+  }
     padding: 20px 18px;
   }
 
@@ -930,7 +991,8 @@ section {
 
   .flex-grid,
   .feat-grid,
-  .how-grid {
+  .how-grid,
+  .price-grid {
     grid-template-columns: 1fr;
   }
 
