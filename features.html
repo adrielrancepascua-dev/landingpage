@@ -2,260 +2,289 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>What the system actually does</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Features — Rance Pascua</title>
     <meta
       name="description"
-      content="Orders, stock, transfers, daily counts, payments, reports, and staff roles — explained the way a shop owner uses them, not as a software brochure."
+      content="Inventory, transfers, orders, staff roles, reports, and expenses — the engine behind Papers & Petals, explained section by section."
     />
     <link rel="icon" href="demo-mark.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <div class="wrap topbar-inner">
-        <a class="brand" href="index.html">
-          <strong>Rance Pascua</strong>
-          <span>Multi-branch operations systems</span>
-        </a>
-        <div class="topbar-actions">
-          <a class="btn btn-ghost" href="features.html" aria-current="page">Features</a>
-          <a class="btn btn-ghost top-only-wide" href="index.html#talk">Talk to me</a>
-          <a class="btn btn-primary" data-demo-link href="https://flowershop-demo.vercel.app">See it live</a>
-        </div>
+    <nav class="nav">
+      <a class="nav-brand mono" href="index.html">
+        <div class="nav-mono-tag">RP</div>
+        RANCE&nbsp;PASCUA
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-back">← Back to overview</a>
+        <a href="index.html#contact" class="nav-cta">Message me →</a>
       </div>
-    </header>
+    </nav>
 
-    <main>
-      <section class="hero hero-compact">
-        <div class="wrap">
-          <p class="eyebrow">The working system · not a brochure</p>
-          <h1>What your team actually uses, day by day.</h1>
-          <p class="lead">
-            Each screen exists because something used to live in a notebook, a group chat, or someone’s memory. This is the long version — what it does, who it’s for, and where to click in the demo.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" data-demo-link href="https://flowershop-demo.vercel.app">Open the live demo</a>
-            <a class="btn btn-secondary" href="index.html#talk">Talk to me about your business</a>
-          </div>
-        </div>
-      </section>
-
+    <section class="page-hero">
       <div class="wrap">
-        <nav class="toc" aria-label="Features">
-          <a href="#orders">Orders</a>
-          <a href="#payments">Payments</a>
-          <a href="#inventory">Inventory</a>
-          <a href="#daily-count">Daily count</a>
-          <a href="#products">Products</a>
-          <a href="#supplies">Supplies</a>
-          <a href="#expenses">Expenses</a>
-          <a href="#reports">Reports</a>
-          <a href="#team">Team</a>
-          <a href="#print">Print</a>
-        </nav>
+        <div class="eyebrow">EVERY FEATURE, EXPLAINED</div>
+        <h1 class="display">What's actually <span class="accent">under the hood.</span></h1>
+        <p>
+          Same engine running Papers &amp; Petals across 3 branches. Here's what it does — and what you'd get if I set it up for your shop.
+        </p>
       </div>
+    </section>
 
-      <section class="section">
-        <div class="wrap">
-          <article class="feature" id="orders">
-            <h2>Orders</h2>
-            <p class="who">Staff at the branch · owner can see every branch</p>
-            <p>
-              The old version of this is a Messenger thread and a promise. Someone takes the order, forgets a detail, and the next person on shift has to guess. Orders here are the shop’s single record of who ordered what, for which branch, for when, and whether money is still owed.
-            </p>
-            <p>
-              You can look at the day as a calendar or as a list. Pickup, delivery, and walk-in are first-class — not a note in the comments. Each order can carry the photos the team actually uses: inspiration from the customer, proof of downpayment, the filled-out form, and a finished photo when it’s ready.
-            </p>
-            <ul>
-              <li>Status moves through a real workflow: not started → preparing → ready → picked up / delivered. You’re not rewriting a chat to match reality.</li>
-              <li>Downpayment and the remaining balance are separate. Taking “half now” doesn’t quietly mark the order paid.</li>
-              <li>Special instructions, wrapper / packing notes, and a greeting card field sit on the order so the person wrapping isn’t hunting in Messenger.</li>
-              <li>When the order uses stock, inventory is deducted. If you edit the order, the stock math follows — it doesn’t leave a ghost shortage.</li>
-            </ul>
-            <p>
-              Staff see their branch. Admin sees all three. That’s the difference between “ask Branch 2 if they got the 3pm pickup” and opening the order.
-            </p>
-            <p class="try-it">In the demo: log in as staff or admin → <strong>Orders</strong>. Make one with a downpayment that isn’t the full amount, then collect the balance as a separate step.</p>
-          </article>
-
-          <article class="feature" id="payments">
-            <h2>Payments</h2>
-            <p class="who">Whoever collects money · reports stay honest because of this</p>
-            <p>
-              Mixed payments are where notebooks lie. Cash down, GCash for the rest, a bank transfer at another branch, “sige balikan nalang.” If the system only has one “paid” checkbox, your sales report is fiction.
-            </p>
-            <p>
-              Every collection asks how it was paid. Downpayment and remaining balance can be different methods. You can attach a reference number. The payment options themselves can differ by branch — because that’s how shops actually bank.
-            </p>
-            <ul>
-              <li>Cash, GCash, card terminal, and bank rails can all be on, per branch. The demo uses that mix on purpose.</li>
-              <li>Collecting the balance is an explicit action. Reports don’t assume “they probably paid already.”</li>
-              <li>Walk-in paid-in-full and “order now, pick up Saturday” are both normal paths, not hacks.</li>
-            </ul>
-            <p class="try-it">In the demo: create an order, pay part in cash, then mark the balance paid with a different method. Open <strong>Reports</strong> after and you’ll see why that split exists.</p>
-          </article>
-
-          <article class="feature" id="inventory">
-            <h2>Inventory &amp; branch transfers</h2>
-            <p class="who">Staff see their shelf · admin moves stock between branches</p>
-            <p>
-              “May stock pa ba?” is the most expensive sentence in a multi-branch shop. One location is drowning, another is turning customers away, and the owner finds out after the sale is gone.
-            </p>
-            <p>
-              Each product is counted per branch. Admin can adjust when a physical count disagrees with the screen. Transfers are a request with a packing trail — not “papadala ako later” in the group chat. You can see what moved, when, and whether the receiving branch has actually accepted it.
-            </p>
-            <ul>
-              <li>On-hand is branch-specific. North Plaza having 120 of something does not mean Midtown can sell it.</li>
-              <li>Transfers create a paper trail (and a printable packing slip) so the rider and the receiving staff are looking at the same list.</li>
-              <li>Unpaid transfer balances exist for shops where the hub bills branches for stock. If that’s not your model, it stays out of the way; if it is, the books don’t float.</li>
-              <li>Movement history answers “why did this number change?” — sale, transfer, or a manual correction.</li>
-            </ul>
-            <p class="try-it">In the demo: <strong>Inventory</strong>. Pick a SKU that’s high at one branch and low at another, then run a transfer. Print the slip if you want to see what staff would hand the rider.</p>
-          </article>
-
-          <article class="feature" id="daily-count">
-            <h2>Daily count</h2>
-            <p class="who">Staff, at close (or open) · reports wait until this is done</p>
-            <p>
-              Spreadsheet shops skip this until something is “off,” then spend a Sunday reconstructing the week. Daily count is the boring ritual that makes reports trustworthy: staff submit what is actually on the shelf, not what the system hoped was there.
-            </p>
-            <p>
-              Until the count is in, that day’s report stays locked. That’s the point. You can’t quietly skip the count and still get a pretty dashboard. Variance shows up as a fact — spoilage, a missed sale, a transfer that wasn’t encoded — instead of a vibe.
-            </p>
-            <ul>
-              <li>Staff enter actuals for their branch. They’re not editing “the official number” in a shared file.</li>
-              <li>Admin sees which branches have submitted and which haven’t.</li>
-              <li>This is also how you catch shrinkage without waiting for month-end panic.</li>
-            </ul>
-            <p class="try-it">In the demo: log in as <code>staff1@demo.plazaretail.app</code> / <code>staff1234</code> → <strong>Daily count</strong>. Submit one, then look at reports as admin. Try skipping it first if you want to feel the lock.</p>
-          </article>
-
-          <article class="feature" id="products">
-            <h2>Products &amp; catalog</h2>
-            <p class="who">Admin · this is where “not a flower app” actually happens</p>
-            <p>
-              The engine does not care if the line is a rose, a bolt, or a loaf. Products have a name, a type, variants (color, size, whatever you use), a cost, and whether they’re sellable. Supplies can live in the same catalog without pretending they’re a customer SKU.
-            </p>
-            <p>
-              When I set this up for you, we load <em>your</em> list. The demo uses placeholder names on purpose so a hardware owner doesn’t bounce off “tulips.” Same screens. Different rows.
-            </p>
-            <ul>
-              <li>Types and variants so “red / blue” or “small / large” aren’t duplicate products with a typo.</li>
-              <li>Cost is stored for COGS. Staff who shouldn’t see it, don’t.</li>
-              <li>Inactive items drop out of ordering without deleting history.</li>
-            </ul>
-            <p class="try-it">In the demo: admin → <strong>Products</strong>. That’s the catalog you’d resticker as yours. Then jump back to the homepage and use the Flowers / Hardware / Bakery switch — same idea, illustrated.</p>
-          </article>
-
-          <article class="feature" id="supplies">
-            <h2>Supplies (hub → branches)</h2>
-            <p class="who">Admin at the hub · branch liability, not a shared grocery run</p>
-            <p>
-              A lot of 3-branch shops buy once at a main location and push goods out. The mess starts when Branch 2 “owes” the hub and nobody can say for how much. Supplies are vouchers for that: new arrivals and old stock moving out, with a running liability per branch.
-            </p>
-            <p>
-              You record who prepared it, who received it, the supplier, and the money attached to flowers vs other supplies vs transport if that’s how you buy. It’s the opposite of a group-chat photo of a delivery receipt.
-            </p>
-            <p class="try-it">In the demo: admin → <strong>Supplies</strong>. North Plaza is the hub. Make a transfer to Midtown and you’ll see the liability idea immediately.</p>
-          </article>
-
-          <article class="feature" id="expenses">
-            <h2>Expenses</h2>
-            <p class="who">Staff log what they spent · admin logs supplier costs</p>
-            <p>
-              Cash-on-hand is a joke if expenses live in someone’s Wallet app. Staff can log a tricycle run or packing purchase as cash or GCash. Admin can log supplier costs that belong on COGS, not in the petty-cash pile.
-            </p>
-            <p>
-              That split matters: a staff reimbursement should not hide inside “we bought inventory.” Reports treat them differently on purpose.
-            </p>
-            <p class="try-it">In the demo: <strong>Expenses</strong>. Add a small staff cash expense, then as admin add a supplier cost. Later, cash-on-hand on Reports only moves for the cash one.</p>
-          </article>
-
-          <article class="feature" id="reports">
-            <h2>Reports</h2>
-            <p class="who">Owner / admin · co-admin sees sales, not the private math</p>
-            <p>
-              The point of all of the above is this screen. Daily and monthly sales, cash on hand, and cost of goods — without exporting to Excel to “make it make sense.”
-            </p>
-            <p>
-              COGS and net sales are owner-only. Co-admin can run the shop without seeing what things cost. That’s a real request from shops where a trusted person operates daily but ownership stays with family.
-            </p>
-            <ul>
-              <li>Daily vs monthly. Pick a branch or look at all of them.</li>
-              <li>Cash on hand is cash sales minus cash-only expenses. GCash expenses don’t pretend they left the cash drawer.</li>
-              <li>Printable sales reports exist for the owner who still wants paper in a folder, or a thermal recap at close.</li>
-              <li>If a branch hasn’t submitted daily count, you don’t get a fake-perfect day. The lock is the feature.</li>
-            </ul>
-            <p class="try-it">In the demo: compare <code>admin@...</code> vs <code>coadmin@demo.plazaretail.app</code> / <code>coadmin1234</code> on <strong>Reports</strong>. Same day, different numbers visible. That’s the role, not a bug.</p>
-          </article>
-
-          <article class="feature" id="team">
-            <h2>Team, roles, onboarding</h2>
-            <p class="who">Admin invites · staff get a branch, not the keys to the kingdom</p>
-            <p>
-              Shared Facebook logins are how shops leak payroll, cost, and customer lists. Here, a person has a role and usually a branch.
-            </p>
-            <ul>
-              <li><strong>Admin</strong> — everything, including cost, supplier spend, supplies, products, and team.</li>
-              <li><strong>Co-admin</strong> — runs operations day to day. Cannot see COGS / net sales.</li>
-              <li><strong>Staff</strong> — their branch’s orders, inventory they need, expenses, daily count. Not other branches’ books.</li>
-            </ul>
-            <p>
-              New staff hit an onboarding step the first time — which branch they belong to, the basics — so you aren’t messaging “wait, anong password ng Midtown.”
-            </p>
-            <p class="try-it">In the demo: log in as staff, then as co-admin, then as admin. The menu shrinks on purpose. Admin → <strong>Team</strong> is where you’d add the next person.</p>
-          </article>
-
-          <article class="feature" id="print">
-            <h2>Print (thermal slips)</h2>
-            <p class="who">Counter staff · riders · the owner who still files paper</p>
-            <p>
-              A back office that only lives on a phone fails at the wrapping table. Order slips and transfer packing lists print for 58/80mm thermal printers. That’s the format already sitting beside most cash drawers.
-            </p>
-            <p>
-              You’re not exporting PDF-to-A4 and hoping. The slip is the work ticket: what’s on the order, how it’s claimed, what the rider is carrying between branches.
-            </p>
-            <p class="try-it">In the demo: open an order → print controls. Same from a transfer on Inventory. If you don’t have a printer plugged in, you’ll still see the document the shop would cut.</p>
-          </article>
+    <section class="feat" id="inventory">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">01 / INVENTORY</div>
+          <h2>Stock that's actually accurate, per branch.</h2>
+          <p class="lede">Every branch sees its own levels. No more calling around to check if something's on hand.</p>
+          <div class="stat-tag"><span class="v">Live</span><span class="l">Stock sync across branches</span></div>
         </div>
-      </section>
-
-      <section class="section" id="what-isnt">
-        <div class="wrap">
-          <h2>What this is not</h2>
-          <p class="sub">So you don’t waste a click.</p>
-          <div class="story">
-            <p>It is not a public website for customers to check out. It is not Foodpanda. It is not a generic SaaS you configure alone at midnight.</p>
-            <p>
-              It is the system behind the counter: stock, staff, money, and the day’s truth. I configure it for your branches and products. Papers &amp; Petals is the proof it survives real volume — ₱700K+/month, 3 branches. The live demo is sample data so you can press every button without touching their shop.
-            </p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" data-demo-link href="https://flowershop-demo.vercel.app">See it live</a>
-              <a class="btn btn-secondary" href="index.html#talk">Talk to me about your business</a>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Per-branch stock levels</div>
+              <div class="detail-desc">Tracked independently — North Plaza having 120 doesn't mean Midtown can sell it.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Safe stock adjustments</div>
+              <div class="detail-desc">Sales, edits, and restocks update the count without two people taking the last unit twice.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Daily inventory counts</div>
+              <div class="detail-desc">Staff submit actuals. Reports stay locked until the count is in — so the day isn't fiction.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Printable stock sheets</div>
+              <div class="detail-desc">Thermal / print-ready lists for counting, shift handover, or the rider's packing slip.</div>
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="wrap">
-        Rance Adriel M. Pascua · <a href="index.html">Home</a>
-        · Live demo uses fictional Plaza Retail data.
       </div>
-    </footer>
+    </section>
 
-    <div class="mobile-cta">
-      <a class="btn btn-secondary" href="index.html#talk">Talk to me</a>
-      <a class="btn btn-primary" data-demo-link href="https://flowershop-demo.vercel.app">See it live</a>
-    </div>
+    <section class="feat on-paper" id="transfers">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">02 / BRANCH TRANSFERS</div>
+          <h2>Move stock between branches without losing track.</h2>
+          <p class="lede">When one branch is drowning and another is empty, the move is requested, logged, and printable — not a phone call.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Request &amp; approve flow</div>
+              <div class="detail-desc">A branch asks, admin approves. Stock doesn't vanish in a group chat.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Line-item transfers</div>
+              <div class="detail-desc">Multiple products in one request, each counted individually.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Full movement history</div>
+              <div class="detail-desc">Every move is logged — useful for disputes, patterns, and “where did this go?”</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat" id="orders">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">03 / ORDERS &amp; COUNTER</div>
+          <h2>Walk-in or scheduled — logged, not buried in chat.</h2>
+          <p class="lede">Staff ring up a walk-in or take a pickup for Saturday. Same record: items, photos, money owed, status you can trust.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Full order lifecycle</div>
+              <div class="detail-desc">Not started → ready → picked up / delivered. You're not rewriting a Messenger thread to match reality.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Stock deducted automatically</div>
+              <div class="detail-desc">A sale or an edit updates inventory. No separate “minus 12 stems” step.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Photos &amp; notes on the order</div>
+              <div class="detail-desc">Inspiration, proof of payment, finished photo — sitting on the ticket, not in someone's camera roll.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Thermal slips</div>
+              <div class="detail-desc">Order tickets and packing lists for the wrapping table and the rider.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat on-paper" id="payments">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">04 / PAYMENTS</div>
+          <h2>Half now, rest later — recorded how it actually happened.</h2>
+          <p class="lede">Cash down, GCash for the balance, a bank transfer at another branch. One “paid” checkbox is how reports start lying.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Downpayment vs remaining</div>
+              <div class="detail-desc">Collecting the rest is an explicit step. Reports don't assume they probably paid.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Methods per branch</div>
+              <div class="detail-desc">Cash, GCash, card terminal, bank rails — on or off depending on how that location actually banks.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat" id="staff">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">05 / STAFF &amp; PERMISSIONS</div>
+          <h2>Not everyone needs to see everything.</h2>
+          <p class="lede">Owners, co-admins, and branch staff each see what's relevant — including hiding cost and net sales if that's how the family wants it.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Admin &amp; co-admin</div>
+              <div class="detail-desc">Co-admin runs the day. COGS and net stay with the owner.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Branch-scoped staff</div>
+              <div class="detail-desc">Tied to their branch. No shared Facebook login, no other location's books.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Guided first login</div>
+              <div class="detail-desc">New hires get an onboarding step, not a blank dashboard and a group-chat password.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat on-paper" id="reports">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">06 / REPORTS</div>
+          <h2>Know the number without doing the math yourself.</h2>
+          <p class="lede">Sales, cash on hand, expenses, cost — by branch or combined, with the right figures hidden from the people who shouldn't see them.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Daily &amp; monthly</div>
+              <div class="detail-desc">Revenue and the private math, by period and by branch.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Role-based visibility</div>
+              <div class="detail-desc">Staff and co-admin never “accidentally” open COGS.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Printable recaps</div>
+              <div class="detail-desc">A sheet for the folder, the accountant, or close-of-day.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feat" id="supplies">
+      <div class="wrap feat-grid">
+        <div>
+          <div class="feat-num">07 / SUPPLIES &amp; EXPENSES</div>
+          <h2>The costs behind the sales, tracked too.</h2>
+          <p class="lede">Hub buys, branches receive, petty cash gets logged. “Net” actually means something.</p>
+        </div>
+        <div class="detail-list">
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Hub → branch supplies</div>
+              <div class="detail-desc">Vouchers and liability when the main location pushes stock out. Not a photo of a receipt in chat.</div>
+            </div>
+          </div>
+          <div class="detail-row">
+            <div class="detail-mark">✓</div>
+            <div>
+              <div class="detail-title">Staff expenses vs supplier cost</div>
+              <div class="detail-desc">A tricycle run isn't inventory. Both feed reports, separately.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="wrap">
+        <div class="eyebrow center">SET UP FOR YOUR BUSINESS</div>
+        <h2 class="display">None of this is fixed. It's configured around you.</h2>
+        <p>Different products, different branch count, different rules on who sees what — tell me how you run and I set it up to match.</p>
+        <div class="footer-actions">
+          <a href="index.html#contact" class="btn btn-primary">Message me about your business →</a>
+        </div>
+        <div class="footer-bottom">
+          <div>© 2026 RANCE PASCUA</div>
+          <div>DAGUPAN, PANGASINAN · PHILIPPINES</div>
+        </div>
+      </div>
+    </section>
 
     <script src="config.js"></script>
     <script src="script.js"></script>

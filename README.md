@@ -1,15 +1,12 @@
-# Pitch landing page
+# Pitch site
 
-One-page site for the multi-branch operations demo.
+Dark ink / paper / stamp look. Overview is `index.html`. Feature depth is `features.html` — short, not a spec.
 
-- Features: [features.html](features.html) — in-depth, owner-language writeup of each screen.
 - Live demo: [flowershop-demo.vercel.app](https://flowershop-demo.vercel.app)
-- Hero proof is Papers & Petals (₱700K+/month, 3 branches).
-- Demo numbers on this page and in the app are fictional.
+- Case study: Papers & Petals, ₱700K+/month, 3 branches
+- Demo ₱ figures are sample data
 
 ## Run locally
-
-Open `index.html`, or from this folder:
 
 ```bash
 npx --yes serve .
@@ -17,14 +14,14 @@ npx --yes serve .
 
 ## Reachability
 
-Edit `config.js` and set at least one of:
+Set at least one in `config.js`:
 
 - `messengerUrl` — e.g. `https://m.me/your.username`
 - `whatsappUrl` — e.g. `https://wa.me/639171234567`
 - `email`
 
-If those stay empty, the form copies a message so a prospect can paste it back to you in Messenger.
+If those stay empty, **Message on Messenger** copies a starter text.
 
 ## Deploy
 
-Connect [this repo](https://github.com/adrielrancepascua-dev/landingpage) to Vercel. Root directory `.`, no build command, output `.`
+Connect this repo to Vercel. Root `.`, no build command.
