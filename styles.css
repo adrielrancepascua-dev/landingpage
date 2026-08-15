@@ -947,13 +947,11 @@ section {
 }
 
 @media (max-width: 760px) {
-  .nav-page {
+  .hide-sm {
     display: none;
   }
 
-  .nav-page:first-child {
-    display: inline;
-  }
+  .nav {
     padding: 20px 18px;
   }
 
