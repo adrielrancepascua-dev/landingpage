@@ -2,7 +2,7 @@
 window.SITE = {
   demoUrl: 'https://flowershop-demo.vercel.app',
   /* Fill at least one before sending this to anyone. */
-  messengerUrl: '',
+  messengerUrl: 'https://m.me/RANCEADRIELM.PASCUA',
   whatsappUrl: '',
   email: '',
 };
