@@ -528,9 +528,19 @@ section {
 }
 
 .case-section {
-  padding: 100px 0 60px;
-  display: flex;
-  justify-content: center;
+  padding: 100px 0;
+}
+
+.case-section .section-head h2 {
+  color: var(--paper);
+}
+
+.case-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 420px) minmax(0, 1fr);
+  gap: 36px;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .receipt {
@@ -669,6 +679,57 @@ section {
   color: #6b6455;
   line-height: 1.6;
   margin-top: 20px;
+}
+
+.shot {
+  margin: 0;
+  background: var(--ink-2);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.shot img {
+  width: 100%;
+  display: block;
+  max-height: 420px;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.case-pair .shot img {
+  max-height: none;
+}
+
+.shot figcaption,
+.shot-legal {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.shot figcaption {
+  padding: 12px 14px 14px;
+  border-top: 1px solid var(--line);
+}
+
+.shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.shot-wide {
+  grid-column: 1 / -1;
+}
+
+.shot-wide img {
+  max-height: 480px;
+}
+
+.shot-legal {
+  margin-top: 18px;
 }
 
 .how-grid {
@@ -990,8 +1051,14 @@ section {
   .flex-grid,
   .feat-grid,
   .how-grid,
-  .price-grid {
+  .price-grid,
+  .case-pair,
+  .shots {
     grid-template-columns: 1fr;
+  }
+
+  .shot-wide {
+    grid-column: auto;
   }
 
   .feat-grid {
