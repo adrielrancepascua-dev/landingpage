@@ -2,6 +2,7 @@
 
 One-page site for the multi-branch operations demo.
 
+- Features: [features.html](features.html) — in-depth, owner-language writeup of each screen.
 - Live demo: [flowershop-demo.vercel.app](https://flowershop-demo.vercel.app)
 - Hero proof is Papers & Petals (₱700K+/month, 3 branches).
 - Demo numbers on this page and in the app are fictional.
