@@ -5,6 +5,8 @@ Dark ink / paper / stamp look. Overview is `index.html`. Feature depth is `featu
 - Live demo: [flowershop-demo.vercel.app](https://flowershop-demo.vercel.app)
 - Case study: Papers & Petals, ₱700K+/month, 3 branches
 - Demo ₱ figures are sample data
+- Customer storefront is pitched as an optional add-on, not the default
+- **Fill `config.js` (Messenger / WhatsApp / email) before you send this to anyone**
 
 ## Run locally
 

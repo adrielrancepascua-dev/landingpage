@@ -470,14 +470,6 @@ section {
   letter-spacing: 0.06em;
 }
 
-.demo-login {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 11px;
-  color: var(--muted);
-  margin: 0 auto 22px;
-  max-width: 460px;
-}
-
 .flex-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -706,6 +698,22 @@ section {
   font-size: 14.5px;
   color: #6b6455;
   line-height: 1.6;
+}
+
+.how-addon {
+  margin: 40px 0 0;
+  max-width: 640px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #6b6455;
+}
+
+.how-addon a {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--stamp-dark);
+  margin-left: 6px;
 }
 
 .footer {
