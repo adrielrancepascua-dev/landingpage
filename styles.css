@@ -905,14 +905,19 @@ section {
     width: 220px;
   }
 
-  .ledger-row,
   .ledger-head {
-    grid-template-columns: 26px 1fr;
+    display: none;
+  }
+
+  .ledger-row {
+    grid-template-columns: 32px 1fr;
+    align-items: start;
+    gap: 12px 16px;
   }
 
   .ledger-after {
-    grid-column: 2 / 3;
-    margin-top: 4px;
+    grid-column: 2;
+    margin-top: 2px;
   }
 
   .flex-grid,
